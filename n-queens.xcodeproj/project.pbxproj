@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		F636FDF62AB73CBB0060AF50 /* n_queensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F636FDF52AB73CBB0060AF50 /* n_queensApp.swift */; };
-		F636FDF82AB73CBB0060AF50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F636FDF72AB73CBB0060AF50 /* ContentView.swift */; };
 		F636FDFA2AB73CBC0060AF50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F636FDF92AB73CBC0060AF50 /* Assets.xcassets */; };
 		F636FDFE2AB73CBC0060AF50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F636FDFD2AB73CBC0060AF50 /* Preview Assets.xcassets */; };
 		F636FE082AB73CBD0060AF50 /* n_queensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F636FE072AB73CBD0060AF50 /* n_queensTests.swift */; };
 		F636FE122AB73CBD0060AF50 /* n_queensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F636FE112AB73CBD0060AF50 /* n_queensUITests.swift */; };
 		F636FE142AB73CBD0060AF50 /* n_queensUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F636FE132AB73CBD0060AF50 /* n_queensUITestsLaunchTests.swift */; };
+		F636FE222AB73D910060AF50 /* MinimumConflictsFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F636FE212AB73D910060AF50 /* MinimumConflictsFormView.swift */; };
+		F636FE242AB7455F0060AF50 /* TestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F636FE232AB7455F0060AF50 /* TestConfiguration.swift */; };
+		F636FE292AB7479C0060AF50 /* MinimimConflictsReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F636FE282AB7479C0060AF50 /* MinimimConflictsReportView.swift */; };
+		F636FE2B2AB747BE0060AF50 /* MinimumConflictsNQueensSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F636FE2A2AB747BE0060AF50 /* MinimumConflictsNQueensSolver.swift */; };
+		F636FE312AB74BD30060AF50 /* ExecutionMinimimConflictsLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F636FE302AB74BD30060AF50 /* ExecutionMinimimConflictsLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		F636FDF22AB73CBB0060AF50 /* n-queens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "n-queens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F636FDF52AB73CBB0060AF50 /* n_queensApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = n_queensApp.swift; sourceTree = "<group>"; };
-		F636FDF72AB73CBB0060AF50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F636FDF92AB73CBC0060AF50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F636FDFB2AB73CBC0060AF50 /* n_queens.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = n_queens.entitlements; sourceTree = "<group>"; };
 		F636FDFD2AB73CBC0060AF50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +48,11 @@
 		F636FE0D2AB73CBD0060AF50 /* n-queensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "n-queensUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F636FE112AB73CBD0060AF50 /* n_queensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = n_queensUITests.swift; sourceTree = "<group>"; };
 		F636FE132AB73CBD0060AF50 /* n_queensUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = n_queensUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F636FE212AB73D910060AF50 /* MinimumConflictsFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumConflictsFormView.swift; sourceTree = "<group>"; };
+		F636FE232AB7455F0060AF50 /* TestConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConfiguration.swift; sourceTree = "<group>"; };
+		F636FE282AB7479C0060AF50 /* MinimimConflictsReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimimConflictsReportView.swift; sourceTree = "<group>"; };
+		F636FE2A2AB747BE0060AF50 /* MinimumConflictsNQueensSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumConflictsNQueensSolver.swift; sourceTree = "<group>"; };
+		F636FE302AB74BD30060AF50 /* ExecutionMinimimConflictsLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutionMinimimConflictsLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +103,8 @@
 		F636FDF42AB73CBB0060AF50 /* n-queens */ = {
 			isa = PBXGroup;
 			children = (
+				F636FE202AB73CEB0060AF50 /* MinimumConflicts */,
 				F636FDF52AB73CBB0060AF50 /* n_queensApp.swift */,
-				F636FDF72AB73CBB0060AF50 /* ContentView.swift */,
 				F636FDF92AB73CBC0060AF50 /* Assets.xcassets */,
 				F636FDFB2AB73CBC0060AF50 /* n_queens.entitlements */,
 				F636FDFC2AB73CBC0060AF50 /* Preview Content */,
@@ -127,6 +135,74 @@
 				F636FE132AB73CBD0060AF50 /* n_queensUITestsLaunchTests.swift */,
 			);
 			path = "n-queensUITests";
+			sourceTree = "<group>";
+		};
+		F636FE202AB73CEB0060AF50 /* MinimumConflicts */ = {
+			isa = PBXGroup;
+			children = (
+				F636FE262AB7475C0060AF50 /* Form */,
+				F636FE272AB7476C0060AF50 /* Report */,
+			);
+			path = MinimumConflicts;
+			sourceTree = "<group>";
+		};
+		F636FE252AB747460060AF50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F636FE232AB7455F0060AF50 /* TestConfiguration.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F636FE262AB7475C0060AF50 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				F636FE2D2AB747F80060AF50 /* View */,
+				F636FE252AB747460060AF50 /* Model */,
+			);
+			name = Form;
+			sourceTree = "<group>";
+		};
+		F636FE272AB7476C0060AF50 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				F636FE2E2AB748030060AF50 /* View */,
+				F636FE2F2AB7480B0060AF50 /* ViewModel */,
+				F636FE2C2AB747F00060AF50 /* Model */,
+			);
+			name = Report;
+			sourceTree = "<group>";
+		};
+		F636FE2C2AB747F00060AF50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F636FE302AB74BD30060AF50 /* ExecutionMinimimConflictsLog.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F636FE2D2AB747F80060AF50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F636FE212AB73D910060AF50 /* MinimumConflictsFormView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F636FE2E2AB748030060AF50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F636FE282AB7479C0060AF50 /* MinimimConflictsReportView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F636FE2F2AB7480B0060AF50 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F636FE2A2AB747BE0060AF50 /* MinimumConflictsNQueensSolver.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +335,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F636FDF82AB73CBB0060AF50 /* ContentView.swift in Sources */,
+				F636FE312AB74BD30060AF50 /* ExecutionMinimimConflictsLog.swift in Sources */,
+				F636FE222AB73D910060AF50 /* MinimumConflictsFormView.swift in Sources */,
+				F636FE242AB7455F0060AF50 /* TestConfiguration.swift in Sources */,
+				F636FE2B2AB747BE0060AF50 /* MinimumConflictsNQueensSolver.swift in Sources */,
+				F636FE292AB7479C0060AF50 /* MinimimConflictsReportView.swift in Sources */,
 				F636FDF62AB73CBB0060AF50 /* n_queensApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +495,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"n-queens/Preview Content\"";
+				DEVELOPMENT_TEAM = L3C5RTHKL6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -451,6 +532,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"n-queens/Preview Content\"";
+				DEVELOPMENT_TEAM = L3C5RTHKL6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
