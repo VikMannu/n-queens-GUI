@@ -97,6 +97,8 @@ class MinimumConflictsNQueensSolver: ObservableObject {
                 } else {
                     if !isValidBoard() {
                         randomBoard()
+                        print("Tablero Generado Aleatoriamente (No hay solución): \(dateFormatter.string(from: Date()))")
+                        printBoard()
                     }
                 }
                 
