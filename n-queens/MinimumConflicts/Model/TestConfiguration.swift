@@ -11,14 +11,14 @@ struct TestConfiguration {
     let nQueens: Int
     let growthInterval: Int
     let numberOfIterations: Int
-    let maxAttempts: Int
-    let maxTime: TimeInterval
+    let maxNodeExpansionAttempts: Int
+    let maxNodeExpansionTime: TimeInterval
     
     init(nQueens: String, growthInterval: String, numberOfIterations: String, maxAttempts: String, maxTime: String) {
         self.nQueens = Int(nQueens) ?? 8
         self.growthInterval = Int(growthInterval) ?? 8
         self.numberOfIterations = Int(numberOfIterations) ?? 10
-        self.maxAttempts = Int(maxAttempts) ?? 10000
-        self.maxTime = TimeInterval(maxTime) ?? 100000.0
+        self.maxNodeExpansionAttempts = Int(maxAttempts) ?? 2000
+        self.maxNodeExpansionTime = TimeInterval(maxTime) ?? 50
     }
 }

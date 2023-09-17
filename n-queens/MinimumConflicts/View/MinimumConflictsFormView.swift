@@ -12,15 +12,15 @@ struct MinimumConflictsFormView: View {
     @State private var growthInterval: String = ""
     @State private var numberOfIterations: String = ""
     
-    @State private var maxAttempts: String = ""
-    @State private var maxTime: String = ""
+    @State private var maxNodeExpansionAttempts: String = ""
+    @State private var maxNodeExpansionTime: String = ""
     private var configuration: TestConfiguration {
         return TestConfiguration(
             nQueens: nQueens,
             growthInterval: growthInterval,
             numberOfIterations: numberOfIterations,
-            maxAttempts: maxAttempts,
-            maxTime: maxTime
+            maxAttempts: maxNodeExpansionAttempts,
+            maxTime: maxNodeExpansionTime
         )
     }
     
@@ -39,10 +39,10 @@ struct MinimumConflictsFormView: View {
                 }
                 
                 Section("Configuración secundaria (Opcional)") {
-                    TextField("Número de intentos para un tablero", text: $maxAttempts)
+                    TextField("Número de nodos máximos a expandir", text: $maxNodeExpansionAttempts)
                         .keyboardType(.numberPad)
                     
-                    TextField("Intervalo de saltos", text: $maxTime)
+                    TextField("Tiempo máximo para expandir nodos (segundos)", text: $maxNodeExpansionTime)
                         .keyboardType(.numberPad)
                 }
             }

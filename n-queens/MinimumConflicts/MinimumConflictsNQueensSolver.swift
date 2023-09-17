@@ -80,14 +80,16 @@ class MinimumConflictsNQueensSolver: ObservableObject {
     }
     
     func solve() {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm:ss"
         board = Array(0..<nQueens)
         while !isValidBoard() {
             randomBoard()
-            print("\nTablero Generado Aleatoriamente")
+            print("\nTablero Generado Aleatoriamente: \(dateFormatter.string(from: Date()))")
             printBoard()
             var attempts = 0
             let startTime = Date.timeIntervalSinceReferenceDate
-            while attempts < configuration.maxAttempts || Date.timeIntervalSinceReferenceDate - startTime <= configuration.maxTime {
+            while attempts < configuration.maxNodeExpansionAttempts || Date.timeIntervalSinceReferenceDate - startTime <= configuration.maxNodeExpansionTime {
                 expandedNodes += 1
                 if let conflictsReparations = calculateConflictsReparations() {
                     let (row, col) = conflictsReparations
