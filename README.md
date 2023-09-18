@@ -15,7 +15,7 @@ Este proyecto implementa una solución para el problema de las N-Reinas utilizan
 ## Instalación y Ejecución
 1. Clona el repositorio desde GitHub:
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone https://github.com/VikMannu/n-queens-GUI.git
 ```
 2. Abre el proyecto en Xcode.
 3. Selecciona el simulador de iOS o conecta tu dispositivo iOS.
